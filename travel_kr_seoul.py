@@ -33,7 +33,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-audio_path = r"C:\streamlit\travel\kr.mp3"
+audio_path =kr.mp3
 if os.path.exists(audio_path):
     with open(audio_path, "rb") as audio_file:
         audio_bytes = audio_file.read()
