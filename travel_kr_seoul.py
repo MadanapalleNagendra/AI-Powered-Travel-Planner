@@ -176,10 +176,10 @@ with col1:
 
 # Right Column: Travel Images
 image_paths = {
-    "train": r"C:\streamlit\travel\train.webp",
-    "bus": r"C:\streamlit\travel\bus.webp",
-    "plane": r"C:\streamlit\travel\plane.webp",
-    "car": r"C:\streamlit\travel\car.webp"
+    "train": r"train.webp",
+    "bus": r"bus.webp",
+    "plane": r"plane.webp",
+    "car": r"car.webp"
 }
 
 with col2:
