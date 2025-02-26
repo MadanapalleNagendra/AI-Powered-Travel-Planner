@@ -1,6 +1,0 @@
-langchain
-streamlit
-streamlit-components
-langchain-core
-langchain-google-genai
-google-generativeai
