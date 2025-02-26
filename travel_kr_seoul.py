@@ -9,25 +9,10 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.output_parsers import StrOutputParser
 
 
-GOOGLE_API_KEY =os.getenv("GEMINI_API_KEY") or "AIzaSyAuPij3vtMkyLaH6RFVsqSg-lEugoKUPE4"
 
-if not GOOGLE_API_KEY:
-    st.error("🔑 API Key not found. Please check your .env file.")
-    st.stop()
-else:
-    st.success("✅ API Key Loaded Successfully!")
-
-
-
-# if os.path.exists(API_KEY_PATH):
-#     with open(API_KEY_PATH, "r") as f:
-#         GOOGLE_API_KEY = f.read().strip()
-# else:
-#     st.error("🔑 API Key file not found. Please check the file path.")
-#     st.stop()
 
 # Initialize AI Model
-chat_model = ChatGoogleGenerativeAI(google_api_key=GOOGLE_API_KEY, model="gemini-2.0-flash-exp", temperature=1)
+chat_model = ChatGoogleGenerativeAI(google_api_key=AIzaSyAuPij3vtMkyLaH6RFVsqSg-lEugoKUPE4, model="gemini-2.0-flash-exp", temperature=1)
 
 # Define the chat template
 chat_template = ChatPromptTemplate(
