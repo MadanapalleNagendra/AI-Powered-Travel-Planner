@@ -6,15 +6,11 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.output_parsers import StrOutputParser
 
-# Load API Key
-API_KEY_PATH = r"C:\DS_2025_Intern\keys\.openai_api_key.txt"
 
-if os.path.exists(API_KEY_PATH):
-    with open(API_KEY_PATH, "r") as f:
-        GOOGLE_API_KEY = f.read().strip()
-else:
-    st.error("🔑 API Key file not found. Please check the file path.")
-    st.stop()
+
+google_api_key = st.secrets["GOOGLE_API_KEY"]
+
+
 
 # Initialize AI Model
 chat_model = ChatGoogleGenerativeAI(google_api_key=GOOGLE_API_KEY, model="gemini-2.0-flash-exp", temperature=1)
