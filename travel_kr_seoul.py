@@ -7,7 +7,9 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.output_parsers import StrOutputParser
 
 # Load API Key
-API_KEY_PATH = r"C:\DS_2025_Intern\keys\.openai_api_key.txt"
+
+API_KEY_PATH = os.getenv("GOOGLE_API_KEY")
+
 
 if os.path.exists(API_KEY_PATH):
     with open(API_KEY_PATH, "r") as f:
