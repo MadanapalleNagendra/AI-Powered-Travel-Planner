@@ -2,16 +2,14 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 import os
-from dotenv import load_dotenv
+
 
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.output_parsers import StrOutputParser
 
-# Load API Key
-load_dotenv()
 
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY =os.getenv("GEMINI_API_KEY") or "AIzaSyAuPij3vtMkyLaH6RFVsqSg-lEugoKUPE4"
 
 if not GOOGLE_API_KEY:
     st.error("🔑 API Key not found. Please check your .env file.")
