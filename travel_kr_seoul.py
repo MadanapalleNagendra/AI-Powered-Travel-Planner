@@ -13,7 +13,7 @@ google_api_key = st.secrets["GOOGLE_API_KEY"]
 
 
 # Initialize AI Model
-chat_model = ChatGoogleGenerativeAI(google_api_key=GOOGLE_API_KEY, model="gemini-2.0-flash-exp", temperature=1)
+chat_model = ChatGoogleGenerativeAI(google_api_key=google_api_key, model="gemini-2.0-flash-exp", temperature=1)
 
 # Define the chat template
 chat_template = ChatPromptTemplate(
