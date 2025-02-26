@@ -8,7 +8,11 @@ from langchain_core.output_parsers import StrOutputParser
 
 # Load API Key
 
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY = os.getenv('keys/.gemini.txt')
+if not GOOGLE_API_KEY:
+    st.error("🔑 API Key not found. Please set the GOOGLE_API_KEY environment variable.")
+    st.stop()
+
 
 
 # if os.path.exists(API_KEY_PATH):
