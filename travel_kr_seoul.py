@@ -12,7 +12,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 
 # Initialize AI Model
-chat_model = ChatGoogleGenerativeAI(google_api_key=AIzaSyAuPij3vtMkyLaH6RFVsqSg-lEugoKUPE4, model="gemini-2.0-flash-exp", temperature=1)
+chat_model = ChatGoogleGenerativeAI(google_api_key="AIzaSyAuPij3vtMkyLaH6RFVsqSg-lEugoKUPE4", model="gemini-2.0-flash-exp", temperature=1)
 
 # Define the chat template
 chat_template = ChatPromptTemplate(
