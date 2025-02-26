@@ -1,6 +1,6 @@
-langchain
-streamlit
-streamlit-components
-langchain-core
-langchain-google-genai
-google-generativeai
+streamlit==1.30.0
+streamlit-components==0.1.5
+langchain-core==0.1.0
+langchain-google-genai==0.0.8
+google-generativeai==0.3.2
+
