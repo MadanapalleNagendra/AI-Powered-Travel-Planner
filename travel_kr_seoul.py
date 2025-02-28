@@ -187,7 +187,7 @@ with col2:
         selected_image = travel_modes[selected_mode]
         image_path = image_paths.get(selected_image)
         if os.path.exists(image_path):
-            st.image(image_path, caption=f"🚆 {selected_mode} Travel in South Korea", use_column_width=True)
+            st.image(image_path, caption=f"🚆 {selected_mode} Travel in South Korea",use_container_width=True)
         else:
             st.warning(f"⚠️ Image not found: {image_path}")
 
