@@ -176,7 +176,7 @@ with col1:
 
 # Right Column: Travel Images
 image_paths = {
-    "train": r"vk-back.jpg",
+    "train": r"train.jpg",
     "bus": r"bus.webp",
     "plane": r"plane.webp",
     "car": r"car.webp"
